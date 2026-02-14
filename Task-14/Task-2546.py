@@ -6,4 +6,4 @@ def convert(num, sys):
         num //= sys
     return res [::-1]
 num=4**36+3*4**20+4**15+2*4**7+49
-print(sum(map(int, )))
+print(len(set(convert(num, 16))))
