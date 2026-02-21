@@ -19,7 +19,7 @@ def convert(num, sys):
     while num:
         res += str(num % sys)
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 print(convert(20,2))
 
@@ -32,7 +32,7 @@ def convert(num, sys):
     while num:
         res += printable[num % sys]
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 # Полезные алгоритмы
 # Сумма цифр двоичной системы
@@ -70,4 +70,6 @@ print(ans[0])
 ans.apanspend([R, N])
 ans = sorted(ans, key=lambda x:(x[0], -x[1]))
 print(ans[0])
+
+
 
