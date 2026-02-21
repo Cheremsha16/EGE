@@ -5,5 +5,5 @@ def convert(num, sys):
         res += printable[num % sys]
         num //= sys
     return res [::-1]
-num=4**36+3*4**20+4**15+2*4**7+49
-print(sum(map(int, )))
+num=4*3125**2019 + 3*625**2020 - 2*125**2021 + 25**2022 - 4*5**2023 - 2024
+print(sum(map(lambda x: int(x, 36), 25)))
