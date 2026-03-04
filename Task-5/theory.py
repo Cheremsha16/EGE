@@ -14,7 +14,7 @@ print(f"{num:x}")
 # int(num, sys), где sys - система ИЗ КОТОРОЙ ПЕРЕВОДИМ
 
 # Перевод любую систему счисления (2 <= sys <= 9)
-def convert(num, sys):
+ def convert(num, sys):
     res =''
     while num:
         res += str(num % sys)
