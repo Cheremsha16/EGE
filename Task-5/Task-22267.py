@@ -5,7 +5,7 @@ def convert(num, sys):
         num //= sys
     return res[::-1]
 ans = []
-for N in range(1, 100_000)
+for N in range(1, 100_000):
     R=convert(N, 7)
     if R[-1] == '2':
         R = R.replace('3', '*')
