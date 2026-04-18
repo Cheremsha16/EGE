@@ -1,13 +1,13 @@
 from itertools import combinations
 
 def f(x):
-    P = 12 <= x <= 26
-    Q = 30 <= x <= 53
+    P = 5 <= x <= 30
+    Q = 14 <= x <= 23
     A = A1 <= x <= A2
-    return (A <= P) or Q
+    return (P == Q) <= (not A)
 
-line_A = [12, 26, 30, 53]
-line_X = [20, 27, 32]
+line_A = [5, 14, 23, 30]
+line_X = [5.5, 14.5, 23.5, 30.5]
 
 ans=[]
 for A1, A2 in combinations(line_A, 2):

@@ -1,16 +1,16 @@
 from itertools import combinations
 
 def f(x):
-    P = 12 <= x <= 26
-    Q = 30 <= x <= 53
+    B = 18 <=  x <= 52
+    C = 16 <= x <= 41
     A = A1 <= x <= A2
-    return (A <= P) or Q
+    return (B <= A) and not C or A
 
-line_A = [12, 26, 30, 53]
-line_X = [20, 27, 32]
+line_A =[16, 18, 41, 52]
+line_X =[16.5, 18.5, 41.5, 52.5]
 
 ans=[]
 for A1, A2 in combinations(line_A, 2):
     if all(f(x) for x in line_X):
         ans.append(A2-A1)
-print(max(ans))
+print(min(ans)) #36
